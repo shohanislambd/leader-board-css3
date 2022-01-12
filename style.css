@@ -5,6 +5,9 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color:#F3F1FF;
 }
+span{
+    color: #fff;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -12,10 +15,10 @@ main{
 }
 .container{
     width: 870px;
-    height: 679px;
+    /* height: 679px; */
     background-color: #fff;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 21px;
 }
 
@@ -79,3 +82,65 @@ hr{
     color: #562EFF;
     text-decoration: none;
 }
+/* courses-area start css */
+.course{
+    /* box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05); */
+    background-color: crimson;
+    padding: 20px;
+    border-radius: 10px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.course-title{
+    color: #fff;
+}
+.courses .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-author a{
+    text-decoration: none;
+    color: orange;
+    font-size: 15px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-duration{
+    background-color: #FFE4E8;
+    /* color: #FF4A60; */
+    /* color: orange; */
+    border-radius: 14.69px;
+    padding: 3px 8px;
+}
+
+/* .far .fa-clock{
+    color: #FF4A60;
+} */
+
+.fas.fa-star{
+    font-size: 12px;
+}
+
+.fas.fa-star.filleds{
+    color: #FFC014;
+}
+.fas.fa-star.empty{
+    color: #AEAEAE
+}
+/* courses-area end css */
+
+
+/* Responsive css Start Mobile device */
+    @media  only screen and(max-width:688px) {
+        .players{
+            background-color: green;
+            grid-template-columns:repeat(1, 1fr) ;
+        }
+    }
+/* Responsive css End Mobile device */
